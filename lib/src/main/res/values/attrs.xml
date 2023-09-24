@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <declare-styleable name="DoraEmptyLayout">
+        <attr name="dview_emptyLayout" format="reference"/>
+        <attr name="dview_errorLayout" format="reference"/>
+        <attr name="dview_loadingLayout" format="reference"/>
+    </declare-styleable>
+</resources>
