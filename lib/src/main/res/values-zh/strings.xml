@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="no_data">空空如也</string>
+    <string name="no_network">无网络</string>
+</resources>
