@@ -52,19 +52,22 @@ class DoraEmptyLayout @JvmOverloads constructor(context: Context, attrs: Attribu
 
     fun showEmpty(emptyText: String = "") {
         runMain {
-            empty?.invoke(showStateView(STATE_EMPTY), emptyText)
+            val view = showStateView(STATE_EMPTY)
+            empty?.invoke(view, emptyText)
         }
     }
 
     fun showError(e: Exception) {
         runMain {
-            error?.invoke(showStateView(STATE_ERROR), e)
+            val view = showStateView(STATE_ERROR)
+            error?.invoke(view, e)
         }
     }
 
     fun showLoading() {
         runMain {
-            loading?.invoke(showStateView(STATE_LOADING))
+            val view = showStateView(STATE_LOADING)
+            loading?.invoke(view)
         }
     }
 
@@ -77,7 +80,8 @@ class DoraEmptyLayout @JvmOverloads constructor(context: Context, attrs: Attribu
                     return@runMain
                 }
             }
-            this.content?.invoke(showStateView(STATE_CONTENT))
+            val view = showStateView(STATE_CONTENT)
+            this.content?.invoke(view)
         }
     }
 
