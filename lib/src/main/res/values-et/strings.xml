@@ -1,0 +1,4 @@
+<resources>
+    <string name="no_data">Andmed puuduvad</string>
+    <string name="no_network">Võrku pole</string>
+</resources>

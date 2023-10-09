@@ -1,0 +1,4 @@
+<resources>
+    <string name="no_data">Ei dataa</string>
+    <string name="no_network">Ei verkkoa</string>
+</resources>

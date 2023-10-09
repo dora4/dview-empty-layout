@@ -1,0 +1,4 @@
+<resources>
+    <string name="no_data">Nema podataka</string>
+    <string name="no_network">Nema mreže</string>
+</resources>

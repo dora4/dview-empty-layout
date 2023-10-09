@@ -1,0 +1,4 @@
+<resources>
+    <string name="no_data">Walay Data</string>
+    <string name="no_network">Walay Network</string>
+</resources>

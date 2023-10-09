@@ -1,0 +1,4 @@
+<resources>
+    <string name="no_data">Không có dữ liệu</string>
+    <string name="no_network">Không có mạng</string>
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="no_data">Sem dados</string>
+    <string name="no_network">Sem rede</string>
+</resources>

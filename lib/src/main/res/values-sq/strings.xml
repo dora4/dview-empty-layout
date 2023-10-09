@@ -1,0 +1,4 @@
+<resources>
+    <string name="no_data">Nuk ka të dhëna</string>
+    <string name="no_network">Nuk ka rrjet</string>
+</resources>

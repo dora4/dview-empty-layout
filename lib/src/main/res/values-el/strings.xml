@@ -1,0 +1,4 @@
+<resources>
+    <string name="no_data">Χωρίς δεδομένα</string>
+    <string name="no_network">Εκτός δικτύου</string>
+</resources>

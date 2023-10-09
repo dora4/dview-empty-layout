@@ -1,0 +1,4 @@
+<resources>
+    <string name="no_data">কোন ডেটা নেই</string>
+    <string name="no_network">নেটওয়ার্ক নেই</string>
+</resources>

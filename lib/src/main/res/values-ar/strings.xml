@@ -1,0 +1,4 @@
+<resources>
+    <string name="no_data">لايوجد بيانات</string>
+    <string name="no_network">لا توجد شبكة</string>
+</resources>

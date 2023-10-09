@@ -1,0 +1,4 @@
+<resources>
+    <string name="no_data">Walang Data</string>
+    <string name="no_network">Walang network</string>
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="no_data">Მონაცემები არ არის</string>
+    <string name="no_network">ქსელი არ არის</string>
+</resources>
