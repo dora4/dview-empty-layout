@@ -13,7 +13,7 @@ import androidx.annotation.LayoutRes
 import androidx.recyclerview.widget.RecyclerView
 import dora.widget.emptylayout.R
 
-class DoraEmptyLayout @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0)
+open class DoraEmptyLayout @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0)
     : RelativeLayout(context, attrs, defStyleAttr) {
 
     private var stateViews = ArrayMap<Int, View>()
