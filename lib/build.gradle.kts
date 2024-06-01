@@ -6,11 +6,11 @@ plugins {
 
 android {
     namespace = "dora.widget.emptylayout"
-    compileSdk = 32
+    compileSdk = 34
 
     defaultConfig {
         minSdk = 21
-        targetSdk = 32
+        targetSdk = 34
     }
     buildTypes {
         release {
@@ -25,9 +25,9 @@ android {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.12.0")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("androidx.recyclerview:recyclerview:1.3.1")
+    implementation("androidx.core:core-ktx:1.13.1")
+    implementation("androidx.appcompat:appcompat:1.7.0")
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
 }
 
 afterEvaluate {
@@ -37,7 +37,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.dora4"
                 artifactId = rootProject.project.name
-                version = "1.6"
+                version = "1.7"
             }
         }
     }
