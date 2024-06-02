@@ -20,7 +20,7 @@ open class DoraEmptyLayout @JvmOverloads constructor(context: Context, attrs: At
     private var empty: (View.(emptyText: String) -> Unit)? = null
     private var error: (View.(exception: Exception) -> Unit)? = null
     private var loading: (View.() -> Unit)? = null
-    private var content: (View.() -> Unit)? = null
+    protected var content: (View.() -> Unit)? = null
     private lateinit var contentView: View
     @LayoutRes
     private var emptyLayoutResId: Int = NO_ID
@@ -71,7 +71,7 @@ open class DoraEmptyLayout @JvmOverloads constructor(context: Context, attrs: At
         }
     }
 
-    fun showContent() {
+    open fun showContent() {
         runMain {
             if (contentView is RecyclerView) {
                 if ((contentView as RecyclerView).adapter == null ||
@@ -85,7 +85,7 @@ open class DoraEmptyLayout @JvmOverloads constructor(context: Context, attrs: At
         }
     }
 
-    private fun showStateView(state: Int) : View {
+    protected fun showStateView(state: Int) : View {
         val targetView = getStateView(state)
         for (stateView in stateViews.values) {
             if (targetView == stateView) {
@@ -140,7 +140,7 @@ open class DoraEmptyLayout @JvmOverloads constructor(context: Context, attrs: At
         }
     }
 
-    private fun runMain(block: () -> Unit) {
+    protected fun runMain(block: () -> Unit) {
         if (Looper.myLooper() == Looper.getMainLooper()) {
             block()
         } else {
