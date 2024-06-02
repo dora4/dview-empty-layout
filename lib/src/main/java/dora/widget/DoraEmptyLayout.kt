@@ -21,7 +21,7 @@ open class DoraEmptyLayout @JvmOverloads constructor(context: Context, attrs: At
     private var error: (View.(exception: Exception) -> Unit)? = null
     private var loading: (View.() -> Unit)? = null
     protected var content: (View.() -> Unit)? = null
-    private lateinit var contentView: View
+    protected lateinit var contentView: View
     @LayoutRes
     private var emptyLayoutResId: Int = NO_ID
         get() = if (field == NO_ID) Config.emptyLayout else field
