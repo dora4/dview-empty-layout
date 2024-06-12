@@ -8,6 +8,7 @@ import android.util.ArrayMap
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import android.widget.RelativeLayout
 import androidx.annotation.LayoutRes
 import androidx.recyclerview.widget.RecyclerView
@@ -78,6 +79,19 @@ open class DoraEmptyLayout @JvmOverloads constructor(context: Context, attrs: At
                         (contentView as RecyclerView).adapter!!.itemCount == 0) {
                     showEmpty()
                     return@runMain
+                }
+            }
+            // 1.12开始支持遍历容器，确保一个EmptyLayout里面只能放一个RecyclerView
+            if (contentView is ViewGroup) {
+                for (i in 0 until childCount) {
+                    val view = getChildAt(i)
+                    if (view is RecyclerView) {
+                        if (view.adapter == null ||
+                            view.adapter!!.itemCount == 0) {
+                            showEmpty()
+                            return@runMain
+                        }
+                    }
                 }
             }
             val view = showStateView(STATE_CONTENT)
