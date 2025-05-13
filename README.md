@@ -3,7 +3,8 @@ dview-empty-layout
 --------------------------------
 #### 卡片
 
-![Dora视图_空态布局](https://github.com/user-attachments/assets/2a2f83cc-7fa4-4105-b929-d086bf54e1a5)
+![DORA视图 空态布局](https://github.com/user-attachments/assets/5c7cf793-ee58-4c39-912f-3c3dd52cb6bc)
+
 ##### 卡名：Dora视图 EmptyLayout
 ###### 卡片类型：调整怪兽
 ###### 属性：暗
