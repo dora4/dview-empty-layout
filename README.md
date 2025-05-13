@@ -2,8 +2,8 @@ dview-empty-layout
 ![Release](https://jitpack.io/v/dora4/dview-empty-layout.svg)
 --------------------------------
 #### 卡片
+![DORA视图 空态布局](https://github.com/user-attachments/assets/1772eff2-c57b-4f04-bde8-9620abb687b0)
 
-![DORA视图 空态布局](https://github.com/user-attachments/assets/5c7cf793-ee58-4c39-912f-3c3dd52cb6bc)
 
 ##### 卡名：Dora视图 EmptyLayout
 ###### 卡片类型：调整怪兽
